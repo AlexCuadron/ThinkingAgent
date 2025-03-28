@@ -243,7 +243,7 @@ def find_responses_files(base_path):
             if issue in selected_ids:
                 try:
                     # Extract model name using outputs as reference
-                    model_idx = path_parts.index('outputs') + 2  # Model name is 2 after 'outputs'
+                    model_idx = path_parts.index('Models') + 1  # Model name is 1 after 'Models'
                     model = path_parts[model_idx]
                     
                     responses_files.append({
@@ -355,7 +355,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.iterations_mode:
-        base_path_template = 'evaluation/evaluation_outputs/outputs/paper/CodeActAgent/best_of_n_o1/iteration_{}'
+        base_path_template = 'Models/best_of_n_o1/iteration_{}'
         
         # Process iterations 1 through 4
         for iteration in range(1, 5):
@@ -367,5 +367,5 @@ if __name__ == '__main__':
             else:
                 print(f"\nSkipping iteration {iteration} - path does not exist: {current_base_path}")
     else:
-        base_path = 'evaluation/evaluation_outputs/outputs/paper/CodeActAgent/'
+        base_path = 'Models/'
         analyze_responses(base_path)
