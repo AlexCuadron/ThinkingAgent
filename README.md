@@ -30,7 +30,7 @@ The framework evaluates three key aspects of overthinking:
 First, clone the repository and install the required packages:
 
 ```shell
-git clone https://github.com/AlexCuadron/AgentThink.git
+git clone https://github.com/AlexCuadron/ThinkingAgent.git
 cd AgentThink
 pip install -r requirements.txt
 ```
