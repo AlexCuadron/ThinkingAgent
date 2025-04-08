@@ -31,7 +31,7 @@ First, clone the repository and install the required packages:
 
 ```shell
 git clone https://github.com/AlexCuadron/ThinkingAgent.git
-cd AgentThink
+cd ThinkingAgent
 pip install -r requirements.txt
 ```
 
