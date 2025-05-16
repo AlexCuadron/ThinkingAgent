@@ -16,12 +16,7 @@
 
 # Overview
 
-AgentThink is a systematic evaluation framework that automatically rates overthinking behavior in large language models. The framework focuses on detecting when models prefer their internal reasoning chain over interacting with the environment, a critical issue in agentic tasks.
-
-The framework evaluates three key aspects of overthinking:
-1. **Analysis Paralysis**: When models focus on heavy planning instead of interacting with the environment
-2. **Rogue Actions**: When models generate multiple actions without waiting for environment feedback
-3. **Premature Disengagement**: When models conclude tasks without proper environment verification
+AgentThink is a systematic evaluation framework that automatically identifies failure patterns in large language models.
 
 # Getting Started
 
@@ -78,24 +73,3 @@ llm = LLM(config)
 # Analyze responses
 analyze_responses("path/to/interactions", iteration_number=None)
 ```
-
-# Results
-
-Our framework has been used to analyze 4,018 trajectories from various models performing software engineering tasks. Key findings from our research:
-
-1. **Performance Impact**:
-   - Higher overthinking scores strongly correlate with decreased performance
-   - Selecting solutions with lower overthinking scores improves model performance by ~30%
-   - Computational costs can be reduced by 43% through overthinking mitigation
-
-2. **Model Behavior Analysis**:
-   - Reasoning models exhibit stronger tendencies toward overthinking compared to non-reasoning models
-   - Three main patterns were identified:
-     * Analysis Paralysis: Models focus on planning instead of action
-     * Rogue Actions: Models execute multiple actions without waiting for feedback
-     * Premature Disengagement: Models conclude tasks without proper verification
-
-3. **Mitigation Strategies**:
-   - Native function-calling capabilities can help reduce overthinking
-   - Selective reinforcement learning shows promise in mitigating overthinking tendencies
-   - Simple selection of lower overthinking score solutions provides significant improvements
