@@ -2,8 +2,6 @@
 
 # Thinking Agent
 
-[![Github](https://img.shields.io/badge/Overthinking-000000?style=for-the-badge&logo=github&logoColor=000&logoColor=white)](https://github.com/AlexCuadron/Overthinking) [![arXiv](https://img.shields.io/badge/arXiv-2502.08235-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2502.08235)
-
 <div align="center" style="font-family: Arial, sans-serif;">
   <p>
     <a href="#overview" style="text-decoration: none; font-weight: bold;">Overview</a> •
